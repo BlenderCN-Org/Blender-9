@@ -1,5 +1,7 @@
 [Bookmarks]
 [Recent]
+D:\01_Work\03_progr\00_wip\BLENDER\Blender\config\
+D:\01_Work\03_progr\00_wip\BLENDER\blender-scripts-master\2.79\scripts\addons\
 !DATA (D:)
 D:\
 D:\01_Work\03_progr\00_wip\BLENDER\Blender\
@@ -9,5 +11,3 @@ D:\06_Instal\00_graphical\Blender\01_Instal_Blender\blender-2.80.0-git.c94f806dc
 D:\06_Instal\00_graphical\Blender\00_for_Blender\Addon\lapineige\
 D:\06_Instal\00_graphical\Blender\00_for_Blender\Addon\lapineige\Wire-Tools\
 D:\06_Instal\00_graphical\Blender\00_for_Blender\Addon\lapineige\TweakArea\
-D:\06_Instal\00_graphical\Blender\00_for_Blender\Addon\lapineige\SaveIncremental\
-D:\06_Instal\00_graphical\Blender\00_for_Blender\Addon\lapineige\OriginPlacingTools\
