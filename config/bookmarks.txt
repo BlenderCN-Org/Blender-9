@@ -1,0 +1,13 @@
+[Bookmarks]
+[Recent]
+!DATA (D:)
+D:\
+D:\01_Work\03_progr\00_wip\BLENDER\Blender\
+D:\06_Instal\00_graphical\Blender\00_for_Blender\Addon\icetool\
+C:\Users\PC\AppData\Roaming\Blender Foundation\Blender\2.79\scripts\addons\
+D:\06_Instal\00_graphical\Blender\01_Instal_Blender\blender-2.80.0-git.c94f806dc73-windows64\2.80\scripts\addons\space_view3d_pie_menus\
+D:\06_Instal\00_graphical\Blender\00_for_Blender\Addon\lapineige\
+D:\06_Instal\00_graphical\Blender\00_for_Blender\Addon\lapineige\Wire-Tools\
+D:\06_Instal\00_graphical\Blender\00_for_Blender\Addon\lapineige\TweakArea\
+D:\06_Instal\00_graphical\Blender\00_for_Blender\Addon\lapineige\SaveIncremental\
+D:\06_Instal\00_graphical\Blender\00_for_Blender\Addon\lapineige\OriginPlacingTools\
