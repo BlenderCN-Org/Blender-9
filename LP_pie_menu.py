@@ -1724,7 +1724,22 @@ class ClearSeam(bpy.types.Operator):
     def execute(self, context):
         bpy.ops.mesh.mark_seam(clear=True)
         return {'FINISHED'} 
-        
+ 
+######################
+#     UV to PS       #               
+######################
+# Send selected UV to Photodhop
+class UvToPs(bpy.types.Operator):
+	bl_idname = "class.uvtops"
+	bl_label = "Send selected UV to Photodhop"
+	bl_options = {'REGISTER', 'UNDO'}
+	
+	def execute(self, context):
+		uvLay = bpy.app.tempdir+"uv_temp.png"
+		bpy.ops.uv.export_layout(filepath=uvLay, size=(1024, 1024), opacity=0)
+		bpy.ops.image.external_edit(filepath=uvLay)
+		return {'FINISHED'} 
+       
 ######################
 #     Pie Menus      #               
 ######################
@@ -1829,6 +1844,7 @@ class PieObjectEditMode(Menu):
             row.prop(toolsettings, "use_mesh_automerge", text="Auto Merge")
             row = box.row(align=True)
             row.operator("wm.call_menu_pie", text="V/E/F Modes", icon='UV_VERTEXSEL').name="pie.vertexedgesfacesmodes"
+			#row.operator("class.uvtops", text="UVtoPS", icon='COLOR')
 
         elif ob and ob.type == 'MESH' and ob.mode in {'EDIT'}:
             pie = layout.menu_pie()
@@ -1851,7 +1867,7 @@ class PieObjectEditMode(Menu):
             row = box.row(align=True)
             row.prop(toolsettings, "use_mesh_automerge", text="Auto Merge")
             row = box.row(align=True)
-            row.operator("wm.call_menu_pie", text="V/E/F Modes", icon='UV_VERTEXSEL').name="pie.vertexedgesfacesmodes"
+            row.operator("class.uvtops", text="UVtoPS", icon='COLOR')
 
         
         
@@ -3032,18 +3048,3 @@ def unregister():
  
 if __name__ == "__main__":
     register()
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
